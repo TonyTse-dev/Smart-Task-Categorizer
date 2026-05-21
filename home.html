@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Categorizer</title>
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Smart Task Categorizer</h1>
+    </div>
+
+    <div id="add_task">
+        <div class="form_container">
+            <h3>Add more tasks!</h3><br>
+            <form method="post" >
+                <p>Task:</p>
+                <input name="task" placeholder="Enter task need to do here."><br><br>   
+
+                <p>Due date:</p>
+                <input type="date" name="date">
+                <br><br>
+                <p></p>
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <?php
+        $host     = 'localhost';
+        $db_name  = 'smart-task-categorizer-db';
+        $username = 'root';
+        $password = '';
+
+        $conn = new mysqli($servername, $username, $password, $db_name);
+    
+    ?>
+</body>
+</html>
