@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="header">
+        <h1 id="title">Smart Task Categorizer</h1>
+    </div>
+
+    <div id="notice">
+        <div style="padding-top: 50px;">
+            <h1 id="notice_text" class= "notice_text_style">Welcome!</h2><br>
+            <p id="notice_text">Still developing I A website help dealing your task</p>
+            <button id="get-started-btn">Get Started</button>
+        </div>
+    </div>
+
+    <!-- Main Features Grid Container -->
+    <div id="func_container">
+        
+        <!-- Feature 1: Logging -->
+        <div class="func-card">
+            <h2 class="func-card-heading">Persistent Task Logging</h2><br><br>
+            <p class="func-card-text"><strong>User Action:</strong> Type a task into the input box. </p>
+        </div>
+
+
+        <!-- Feature 3: Filtering -->
+        <div class="func-card">
+            <h2 class="func-card-heading">Dynamic View Filtering</h2><br><br>
+            <p class="func-card-text"><strong >User Action:</strong> Use the dropdown menu selector to instantly filter your task.</p>
+        </div>
+
+        <!-- Feature 4: Deletion -->
+        <div class="func-card">
+            <h2 class="func-card-heading">Clean Data Deletion</h2><br><br>
+            <p class="func-card-text"><strong>User Action:</strong> Click the red delete button next to any active task item to permanently remove it.</p>
+        </div>
+
+    </div>
+
+    <div id="intro_container">
+        <div class="intro_card">
+            <img src="">
+            <p>Intro 1</p>
+        </div>
+        <div class="intro_card" style="margin-left: auto; margin-right: 4%;">
+            <img src="">
+            <p>Intro 1</p>
+        </div>
+        <div class="intro_card">
+            <img src="">
+            <p>Intro 1</p>
+        </div>
+        
+    </div>
+
+    <div id="footer">
+        <h1 id="title" style="color: black;">Smart Task Categorizer</h1>
+
+        <footer class="footer-column-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.php">Dashboard</a></li>
+                <li><a href="#func_container">Features</a></li>
+                <li><a href="mailto:tonytseofficial@gmail.com">Support Help</a></li>
+            </ul>
+
     
+        <div class="footer-bottom">
+            <p>&copy; <?php echo date('Y'); ?> Tony Tse. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

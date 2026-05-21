@@ -1,0 +1,125 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+
+h1,h2,h3,h4,h5,h6, p{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#header{
+    background-color: #222222;
+    height: 60px;
+    
+}
+
+#title{
+    padding-top: 10px;
+    color: white;
+    padding-left: 10px;
+}
+
+#notice{
+    background-color: #ea940c;
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#notice_text{
+    text-align: center;
+    padding-top: 5px;
+}
+
+#get-started-btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#get-started-btn:hover{
+    border-color: aliceblue;
+    color: white;
+    background-color: black;
+}
+
+.notice_text_style{
+    border-radius: 10px;
+    font-size: 100px;
+    font-weight: 100px;
+}
+
+#func_container{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.func-card{
+    width: 30%;
+    margin-left: 2%;
+    background-color: #ea940c;
+    border-radius: 7px;
+}
+
+.func-card-heading{
+    padding-top: 20px;
+}
+
+.func-card-text{
+    padding: 20px;
+    font-size: 18px;
+}
+
+#intro_container{
+    display: block;
+    text-align: center;
+}
+
+.intro_card{
+    background-color: #ea940c;
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: 4%;
+    border-radius: 4px;
+    height: 100px;
+}
+
+.intro-card-body{
+    width: 70%;
+}
+#footer {
+    background-color: #ea940c;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+}
+.footer-column-links{
+    margin: 0;
+    margin-left: 10px;
+
+}
+
+.footer-bottom{
+    margin: 0;
+    margin-left: 10px;
+
+}
