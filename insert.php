@@ -9,14 +9,14 @@
     // Check if the form actually posted data
         $task = $_POST['task'];
         $date = $_POST['date'];
-
+        $category = $_POST['category'];
     
-        $sql = "INSERT INTO tasks (Name, Due_date) VALUES ('$task', '$date')";
+        $sql = "INSERT INTO tasks (Name, Due_date, Category) VALUES ('$task', '$date', '$category')";
         
         
         $insert = mysqli_query($link, $sql);
 
-        header("Location: home.html");
+        header("Location: home.php");
         exit();
     
 ?>
