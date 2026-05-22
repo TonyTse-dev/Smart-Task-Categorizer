@@ -24,6 +24,12 @@
                     <option value="personal">Personal</option>
                     <option value="other">Other</option>    
                 </select><br><br>
+                <p>Status:</p>
+                <select name="status">
+                    <option value="Pending">Pending</option>
+                    <option value="Completing">Completing</option>
+                    <option value="Completed">Completed</option>
+                </select><br><br>
                 <p>Due date:</p>
                 <input type="date" name="date">
                 <br><br>
@@ -47,9 +53,10 @@
         $result = mysqli_query($link, $query5);
     ?>
         <table id='tasks_table' border="1" cellpadding="10" style="border-collapse: collapse"; >
-            <tr >
+            <tr>
                 <th>Task Name</th>
                 <th>Due Date</th>
+                <th>Category</th>
                 <th>Status</th>
             </tr>
             <!-- Loop through every row in the database -->
@@ -59,9 +66,23 @@
                 <td>{$row['Name']}</td>
                 <td>{$row['Due_date']}</td>
                 <td>{$row['Category']}</td>
-            </tr>";
+                <td>
+                    <form method='post' action='update.php' style='display: inline;'>
+                        <select name='status'>
+                            <option value='Pending'>Pending</option>
+                            <option value='Completing'>Completing</option>
+                            <option value='Completed'>Completed</option>
+                        </select>
+                    
+                </td>
+            </tr>
+             ";
         }
     ?>
         </table>
+
+            <button type='submit' >Update</button>
+        </form>
+
 </body>
 </html>

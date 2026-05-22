@@ -10,11 +10,13 @@
         $task = $_POST['task'];
         $date = $_POST['date'];
         $category = $_POST['category'];
+        $status = $_POST['status'];
     
-        $sql = "INSERT INTO tasks (Name, Due_date, Category) VALUES ('$task', '$date', '$category')";
+        $sql = "INSERT INTO tasks (Name, Due_date, Category, Status) VALUES ('$task', '$date', '$category', '$status')";
         
         
         $insert = mysqli_query($link, $sql);
+
 
         header("Location: home.php");
         exit();
