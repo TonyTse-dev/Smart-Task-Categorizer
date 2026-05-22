@@ -14,9 +14,9 @@
     <div id="add_task">
         <div class="form_container">
             <h3>Add more tasks!</h3><br>
-            <form method="post" >
+            <form action="insert.php" method="post">
                 <p>Task:</p>
-                <input name="task" placeholder="Enter task need to do here."><br><br>   
+                <input type="text" name="task" placeholder="Enter task need to do here." required><br><br>   
 
                 <p>Due date:</p>
                 <input type="date" name="date">
@@ -35,8 +35,11 @@
         $username = 'root';
         $password = '';
 
-        $link = mysqli_connect($server, $username, $password, $database);
-    
+        $link = mysqli_connect($host, $username, $password, $db_name);
+        $task = $_POST['task'];
+        $date = $_POST['date'];
+
+        echo "$task";
     ?>
 </body>
 </html>
