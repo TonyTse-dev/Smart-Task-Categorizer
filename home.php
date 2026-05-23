@@ -80,8 +80,8 @@
         }
     ?>
         </table>
-
-            <button type='submit' >Update</button>
+            <br>
+            <button type='submit' id='update_btn'>Update</button>
         </form>
 
 </body>
