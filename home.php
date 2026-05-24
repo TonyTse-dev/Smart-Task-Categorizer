@@ -68,7 +68,7 @@
                 <td>{$row['Category']}</td>
                 <td>
                     <form method='post' action='update.php' style='display: inline;'>
-                        <select name='status'>
+                        <select name='updating_status'>
                             <option value='Pending'>Pending</option>
                             <option value='Completing'>Completing</option>
                             <option value='Completed'>Completed</option>
