@@ -60,19 +60,22 @@
                 <th>Status</th>
             </tr>
             <!-- Loop through every row in the database -->
-    <?php        
+    <?php  
+        $i = 0;      
         while ($row = mysqli_fetch_assoc($result)) {
+            $id = 0;
             echo "<tr>
                 <td>{$row['Name']}</td>
                 <td>{$row['Due_date']}</td>
                 <td>{$row['Category']}</td>
                 <td>
                     <form method='post' action='update.php' style='display: inline;'>
-                        <select name='updating_status'>
-                            <option value='Pending'>Pending</option>
-                            <option value='Completing'>Completing</option>
-                            <option value='Completed'>Completed</option>
-                        </select>
+                        <input type='hidden' name='record_id' value='{$row['id']}'>
+                            <select name='updating_status'>
+                                <option value='Pending'>Pending</option>
+                                <option value='Completing'>Completing</option>
+                                <option value='Completed'>Completed</option>
+                            </select>
                     
                 </td>
             </tr>
